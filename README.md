@@ -1,8 +1,5 @@
 # ESC/POS Print Driver for PHP
-[![Build Status](https://travis-ci.org/mike42/escpos-php.svg?branch=master)](https://travis-ci.org/mike42/escpos-php) [![Latest Stable Version](https://poser.pugx.org/mike42/escpos-php/v/stable)](https://packagist.org/packages/mike42/escpos-php)
-[![Total Downloads](https://poser.pugx.org/mike42/escpos-php/downloads)](https://packagist.org/packages/mike42/escpos-php)
-[![License](https://poser.pugx.org/mike42/escpos-php/license)](https://packagist.org/packages/mike42/escpos-php)
-[![Coverage Status](https://coveralls.io/repos/github/mike42/escpos-php/badge.svg?branch=development)](https://coveralls.io/github/mike42/escpos-php?branch=development)
+
 
 This project implements a subset of Epson's ESC/POS protocol for thermal receipt printers. It allows you to generate and print receipts with basic formatting, cutting, and barcodes on a compatible printer.
 
@@ -46,20 +43,20 @@ This driver is known to work with the following OS/interface combinations:
 </tr>
 <tr>
 <th>Parallel</th>
-<td><a href="https://github.com/mike42/escpos-php/tree/master/example/interface/windows-lpt.php">Yes</a></td>
+<td><a href="https://github.com/sabuj073/pos-php/tree/master/example/interface/windows-lpt.php">Yes</a></td>
 <td>Not tested</td>
 <td>Yes</td>
 </tr>
 <tr>
 <th>SMB shared</th>
-<td><a href="https://github.com/mike42/escpos-php/tree/master/example/interface/smb.php">Yes</a></td>
+<td><a href="https://github.com/sabuj073/pos-php/tree/master/example/interface/smb.php">Yes</a></td>
 <td>No</td>
-<td><a href="https://github.com/mike42/escpos-php/tree/master/example/interface/smb.php">Yes</a></td>
+<td><a href="https://github.com/sabuj073/pos-php/tree/master/example/interface/smb.php">Yes</a></td>
 </tr>
 <tr>
 <th>CUPS hosted</th>
-<td><a href="https://github.com/mike42/escpos-php/tree/master/example/interface/cups.php">Yes</a></td>
-<td><a href="https://github.com/mike42/escpos-php/tree/master/example/interface/cups.php">Yes</a></td>
+<td><a href="https://github.com/sabuj073/pos-php/tree/master/example/interface/cups.php">Yes</a></td>
+<td><a href="https://github.com/sabuj073/pos-php/tree/master/example/interface/cups.php">Yes</a></td>
 <td>No</td>
 </tr>
 </table>
@@ -158,7 +155,6 @@ Many thermal receipt printers support ESC/POS to some degree. This driver has be
 - Zjiang ZJ-8220 (Also marketed as Excelvan ZJ-8220)
 - Zjiang ZJ-8250
 
-If you use any other printer with this code, please [let us know](https://github.com/mike42/escpos-php/issues/new) so that it can be added to the list.
 
 ## Basic usage
 
@@ -169,7 +165,7 @@ If you use any other printer with this code, please [let us know](https://github
 This library is designed for use with the `composer` PHP dependency manager. Simply add the `mike42/escpos-php` package to get started:
 
 ```bash
-composer require mike42/escpos-php
+composer require sabuj073/pos-php
 ```
 
 If you haven't used `composer` before, you can read about it at [getcomposer.org](https://getcomposer.org/).
@@ -186,7 +182,7 @@ This project has few hard dependencies:
 It is also suggested that you install either `imagick` or `gd`, as these can be used to speed up image processing.
 
 A number of optional extensions can be added to enable more specific features. These
-are described in the "suggest" section of [composer.json](https://github.com/mike42/escpos-php/tree/master/composer.json).
+are described in the "suggest" section of [composer.json](https://github.com/sabuj073/pos-php/tree/master/composer.json).
 
 ### The 'Hello World' receipt
 
